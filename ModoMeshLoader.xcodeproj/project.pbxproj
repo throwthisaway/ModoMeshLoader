@@ -6,8 +6,14 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E79B3F6422EDDBAE008A34A7 /* ModoMeshLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E79B3F6322EDDBAE008A34A7 /* ModoMeshLoader.cpp */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		E79B3F5B22EDDB63008A34A7 /* libModoMeshLoader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libModoMeshLoader.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79B3F6222EDDB9A008A34A7 /* ModoMeshLoader.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = ModoMeshLoader.h; sourceTree = "<group>"; };
+		E79B3F6322EDDBAE008A34A7 /* ModoMeshLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ModoMeshLoader.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +30,8 @@
 		E79B3F5222EDDB63008A34A7 = {
 			isa = PBXGroup;
 			children = (
+				E79B3F6322EDDBAE008A34A7 /* ModoMeshLoader.cpp */,
+				E79B3F6222EDDB9A008A34A7 /* ModoMeshLoader.h */,
 				E79B3F5C22EDDB63008A34A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E79B3F6422EDDBAE008A34A7 /* ModoMeshLoader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +231,7 @@
 		E79B3F6022EDDB63008A34A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -232,6 +242,7 @@
 		E79B3F6122EDDB63008A34A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CODE_SIGN_STYLE = Automatic;
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
