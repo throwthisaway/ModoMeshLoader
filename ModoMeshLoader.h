@@ -20,7 +20,7 @@ namespace ModoMeshLoader {
 		//string name;
 		uint32_t indexByteOffset, vertexByteOffset, stride;
 		float rgb[3];
-		float metallic, roughess;
+		float metallic, roughness;
 		unsigned textureMask;
 		unsigned uvCount;
 		Texture textures[(int)TextureTypes::kCount];
