@@ -1,4 +1,5 @@
 #include "ModoMeshLoader.h"
+#include <assert.h>
 namespace ModoMeshLoader {
 	namespace {
 		std::vector<uint8_t> LoadData(const uint8_t* p, uint32_t size) {
