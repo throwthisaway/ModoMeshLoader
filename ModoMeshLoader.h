@@ -2,6 +2,8 @@
 #include <cstdint>
 #include <vector>
 #include <string>
+#include "SIMDTypeAliases.h"
+#include "ShaderStructs.h"
 
 #define MATR "MATR"
 #define POLY "POLY"
@@ -16,11 +18,10 @@ namespace ModoMeshLoader {
 	struct Texture {
 		unsigned id, uv;
 	};
-	struct Material {
+	struct Submesh {
 		//string name;
 		uint32_t indexByteOffset, vertexByteOffset, stride;
-		float rgb[3];
-		float metallic, roughness;
+		Material material;
 		unsigned textureMask;
 		unsigned uvCount;
 		Texture textures[(int)TextureTypes::kCount];
