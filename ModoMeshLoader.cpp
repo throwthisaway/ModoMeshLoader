@@ -8,8 +8,8 @@ namespace ModoMeshLoader {
 			memcpy(result.data(), p, size);
 			return result;
 		}
-		std::vector<Material> LoadMaterials(const uint8_t* p, uint32_t size, uint32_t count) {
-			std::vector<Material> result;
+		std::vector<Submesh> LoadSubmeshes(const uint8_t* p, uint32_t size, uint32_t count) {
+			std::vector<Submesh> result;
 			result.resize(count);
 			memcpy(result.data(), p, size);
 			return result;
@@ -38,7 +38,7 @@ namespace ModoMeshLoader {
 			else if (tag == Tag(VERT))
 				result.vertices = LoadData(p, size);
 			else if (tag == Tag(MATR))
-				result.materials = LoadMaterials(p, size, count);
+				result.submeshes = LoadSubmeshes(p, size, count);
 			else if (tag == Tag(IMAG))
 				result.images = LoadImages(p, size, count);
 			else

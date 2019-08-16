@@ -3,6 +3,7 @@
 #include <vector>
 #include <string>
 #include "SIMDTypeAliases.h"
+#include "Platform.h"
 #include "ShaderStructs.h"
 
 #define MATR "MATR"
@@ -34,7 +35,7 @@ namespace ModoMeshLoader {
 
 	struct Result {
 		std::vector<std::string> images;
-		std::vector<Material> materials;
+		std::vector<Submesh> submeshes;
 		std::vector<uint8_t> vertices, indices;
 	};
 	Result Load(const std::vector<uint8_t>& data);
